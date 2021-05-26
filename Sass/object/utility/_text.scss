@@ -1,0 +1,8 @@
+.u-text {
+  @include breakpoint (tablet){
+    height: 369px;
+  }
+  @include breakpoint (pc) {
+    height: 191px;
+  }
+}

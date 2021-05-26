@@ -1,0 +1,15 @@
+.l-footer  {
+  grid-column: 1/3;
+  grid-row:2/3;
+  position: relative;
+}
+.l-footer p {
+// position: absolute;
+// top: 30%;
+// left: 51.25%;
+// color: $title-color;
+text-align: center;
+height: 100px;
+width: 100px;
+
+}

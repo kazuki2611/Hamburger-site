@@ -1,0 +1,41 @@
+.c-service__title {
+  position: absolute;
+  color: $title-color;
+  font-size: 41px;
+  margin: 11px 0 0 10px;
+  
+ 
+  @include breakpoint (tablet) {
+    font-size: 44px;
+    margin: 12px 0 0 11px;
+  }
+  @include breakpoint (pc) {
+    font-size: 400%;
+    white-space: nowrap;
+    
+    margin : 20px 0 0 19px;
+
+  }
+}
+.c-service__archive__title {
+  
+  color: rgb(60, 42, 16);
+  font-family: "M+ Type-1 (general-j) bold";
+  font-size: 28px;
+  padding: 30px 0px 0px 22px;
+  @include breakpoint (tablet) {
+    font-size: 36px;
+  padding: 36px 0 0 42px;
+  }
+  @include breakpoint (pc) {
+    padding: 60px 0 0 100px;
+   }
+
+}
+
+.c-service__single__title {
+  padding: 30px 0 0 0 ;
+  @include breakpoint (tablet) {
+    padding: 60px 0 0 0 ;
+  }
+}

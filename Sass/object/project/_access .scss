@@ -1,0 +1,64 @@
+.p-access {
+  height: 691px;
+  justify-content: center;
+  color: $title-color;
+ position: relative;
+  width: 100%;
+  background-size: cover;
+ background-image: url(../image/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+ position: relative;
+  background-position: center;
+  background: linear-gradient(180deg, rgba(0, 0,  0, 0.6) 60%, rgba(0, 0, 0, 0.7) 60%,rgba(128, 128, 128, 0.9) 40%,rgba(128, 128, 128, 0.7) 40%),
+url(../image/access1.png);
+@include breakpoint(tablet) {
+  height: 415px;
+  background: linear-gradient(180deg, rgba(0, 0,  0, 0.6) 100%, rgba(0, 0, 0, 0.7) 100%,rgba(128, 128, 128, 0.9) 100%,rgba(128, 128, 128, 0.7) 100%),
+url(../image/access1.png);
+}
+@include breakpoint (pc) {
+  
+  height: 649px;
+  background: linear-gradient(90deg, rgba(0, 0,  0, 0.6) 60%, rgba(0, 0, 0, 0.7) 60%,rgba(128, 128, 128, 0.9) 40%,rgba(128, 128, 128, 0.7) 40%),
+  url(../image/access1.png);
+}
+
+ &-wrapper {
+   
+   &__title {
+     padding: 40px 0 0 42px;
+     font-family: 'M+ Type-1 (general-j) bold';
+     @include breakpoint (pc) {
+      font-size: 36px;
+       padding: 83px 0 0 119px;
+     }
+   }
+   &__text  {
+    font-family: 'M+ Type-1 (general-j) bold';
+     height: 518px;
+    line-height: 33px;
+    padding: 40px 40px;
+    overflow: hidden;
+    font-size: 14px;
+    @include breakpoint (tablet) {
+      padding: 40px 29px 10px 42px;
+      height: 356px;
+      
+    }
+  @include breakpoint (pc) {
+    overflow-wrap: break-word;
+
+    height: 356px;
+width: 697px;
+padding: 119px 0 0 119px;
+    
+    
+  }
+  
+   }
+   @include breakpoint (pc) {
+    height: 649px;
+
+  }
+ }
+
+}

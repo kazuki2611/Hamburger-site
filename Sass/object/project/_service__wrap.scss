@@ -1,0 +1,6 @@
+.p-service__wrap__single {
+  padding: 0 20px;
+  @include breakpoint (tablet) {
+    padding: 0 60px;
+  }
+}

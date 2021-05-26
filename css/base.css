@@ -1,0 +1,8 @@
+body {
+  overflow-x: hidden;
+}
+
+body.is-open {
+  position: fixed;
+}
+/*# sourceMappingURL=base.css.map */

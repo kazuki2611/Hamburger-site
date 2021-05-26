@@ -1,0 +1,13 @@
+.u-padding {
+  padding: 216px 0 0 46px;
+  @include breakpoint (tablet) {
+    padding: 212px 0 0 0px;
+  }
+  @include breakpoint (pc) {
+    padding: 212px 0 0 0px;
+  }
+  
+}
+.u-padding2 a {
+  padding: 0;
+}

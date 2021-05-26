@@ -1,0 +1,65 @@
+.p-hero {
+  position: relative;
+  height:285px;
+  background-image: url(../image/3ba5a44414bb3c0885c27ff614596431.png);
+  background-size: cover ;
+  background-position: center;
+  width: auto;
+  @include breakpoint (pc) {
+   
+height: 530px;
+  width: 100%;
+  }
+    
+  
+//  h1  {
+//   font-family: 'M+ Type-1 (general-j) bold';
+// 	font-weight: bold;
+//   font-size: 36px;
+//    position: absolute;
+//    color: $title-color;
+//    top: 50%;
+//    left: 10%;
+//    @include breakpoint (pc) {
+//      font-size: 40px;
+//    }
+//  }  
+ 
+ 
+}
+.p-hero__archive {
+  background-image: url(../image/hero2.png);
+  background-color: #000;
+  height: 283px;
+  width: 100%;
+  @include breakpoint (pc) {
+    height: 239px;
+    h1 {
+      font-size: 60px;
+
+    }
+  }
+  
+}
+.p-hero__single {
+
+background-position: center;
+background-size: cover;
+height: 225px;
+position: relative;
+@include breakpoint (tablet) {
+  
+  height: 500px;
+}
+img {
+  height: 500px;
+  width: 100%;
+  
+  background-position: center;
+  background-size: cover;
+}
+
+}
+.p-hero__page {
+  background-image: url(../image/shop.png);
+}

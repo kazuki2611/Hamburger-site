@@ -1,0 +1,44 @@
+.c-menu__button {
+  display: block;
+  margin-top: 40px;
+  margin: 40px auto 0 auto;
+  // margin: 40px 93px 43.7px 80px;
+
+  // margin-top: 40px;
+  // margin-left: auto;
+
+  background-color: #fff;
+  color: #707070;
+  font-size: 16px;
+  height: 42.47px;
+  width: 163.16px;
+  border-radius: 50px;
+  a {
+    color: #707070;
+    text-decoration: none;
+  }
+  @include breakpoint(tablet) {
+    margin-top: 45px;
+  }
+  @include breakpoint(pc) {
+    height: 50px;
+    // width: 292px;
+    width: 200px;
+    margin: 60px auto 0 auto;
+  }
+}
+.c-menu__button__single {
+  font-size: 16px;
+  font-family: $font-regular;
+  border-radius: 20px;
+  width: 60%;
+  height: 104px;
+  border: solid 1px $text-color;
+  background-color: $menu-color;
+  margin-top: 60px;
+  justify-content: center;
+  cursor: pointer;
+  @include breakpoint(pc) {
+    width: 30%;
+  }
+}

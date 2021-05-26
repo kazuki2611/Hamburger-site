@@ -1,0 +1,16 @@
+.c-blockquote__text {
+  font-size: 16px;
+  height: 505px;
+  @include breakpoint (tablet) {
+    height: 252px;
+  }
+}
+.c-blockquote__source {
+  padding-top: 30px;
+  padding-left: 20px;
+  @include breakpoint (tablet) {
+    font-size: 16px;
+    padding-top: 60px;
+    padding-left: 0px;
+  }
+}

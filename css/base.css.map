@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EAMH,UAAU,EAAE,MAAM;CAElB;;AARF,AACE,IADE,AACD,QAAQ,CAAC;EACR,QAAQ,EAAE,KAAK;CAEhB",
+    "sources": [
+        "../Sass/foundation/base.scss"
+    ],
+    "names": [],
+    "file": "base.css"
+}

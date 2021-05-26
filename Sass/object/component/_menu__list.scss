@@ -1,0 +1,11 @@
+.c-menu__list {
+  background-image: url(../image/cooked-foods-750073.png);
+  height: 205px;
+  background-position: center;
+  background-size: cover;
+  margin: 20px  0px 0 0px;
+  @include breakpoint (pc) {
+    height: 257px;
+    margin-top: 60px;
+  }
+}

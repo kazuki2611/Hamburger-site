@@ -1,0 +1,20 @@
+.c-service-contents__title {
+  font-family: 'M+ Type-1 (general-j) bold';
+  font-size: 22px;
+  // // font-family: 'mplus-1m-regular';
+	// // src: url(/fonts/mplus-1m-regular.ttf);
+  // font-family: 'mplus-1m-regular';
+
+  // font-weight:bold;
+  
+  color: $font-color;
+  // padding: 19px 0 19px 10px ;
+ 
+  @include breakpoint (tablet) {
+    padding: 20px 0 0 11px;
+
+  }
+  @include breakpoint (pc) {
+    padding: 17px 0 0 19px;
+  }
+}

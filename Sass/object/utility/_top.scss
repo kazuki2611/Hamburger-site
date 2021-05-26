@@ -1,0 +1,11 @@
+.u-top {
+  
+  top: 469px;
+//  margin-top: 9px;
+@include breakpoint (tablet) {
+  top: 498px;
+}
+  @include breakpoint (pc) {
+    top: 999px;
+  }
+  }

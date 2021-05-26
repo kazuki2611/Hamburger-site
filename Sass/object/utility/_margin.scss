@@ -1,0 +1,22 @@
+.u-margin {
+  margin-right: 0;
+  }
+  .u-margin__single {
+    margin: 0 9px 0 0 ;
+    @include breakpoint (tablet) {
+      margin: 0 21px 0 0 ;
+      
+    }
+    @include breakpoint (pc) {
+      margin-right: 40px;
+    }
+  }
+  .u-margin__single2 {
+    padding-left: 18px;
+  }
+  .u-margin__single3 {
+    margin-top: 60px;
+    @include breakpoint (pc) {
+  margin-top: 140px;
+    }
+  }

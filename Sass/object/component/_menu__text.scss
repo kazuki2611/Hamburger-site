@@ -1,0 +1,14 @@
+.c-menu__text {
+  
+  font-size: 16px;
+  font-family:  'M+ Type-1 (general-j) regular';
+  padding-top: 10px;
+  padding-right: 31px;
+  @include breakpoint (pc) {
+    font-size: 16px;
+    padding-top: 17px;
+    
+    
+  }
+
+}

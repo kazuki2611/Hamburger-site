@@ -1,0 +1,17 @@
+.c-menu-box__text {
+  // width: 183px;
+ 
+  width: 70%;
+  height: 176px;
+  margin-left: 10px;
+  overflow: hidden;
+  @include breakpoint (tablet) {
+    height: 373px;
+    margin-left: 21px;
+  }
+  @include breakpoint (pc) {
+    margin-left: 40px;
+    width: 54%;
+    height: 191px;
+  }
+}

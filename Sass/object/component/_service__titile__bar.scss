@@ -1,0 +1,22 @@
+.c-service__titile__bar {
+  
+  position:absolute;
+  top:75.3px;
+  width: 33.89px;
+  border: solid 2px;
+  left: 3.5px;
+  color: $title-color;
+  @include breakpoint (tablet)  {
+    
+width: 35.94px;
+top: 91.6px;
+left: 15.1px;
+  }
+
+@include breakpoint (pc) {
+  top: 160.5px;
+  left: 26.5px;
+  width: 63px;
+}
+
+}

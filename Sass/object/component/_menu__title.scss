@@ -1,0 +1,8 @@
+.c-menu__title {
+  
+  font-size: 20px;
+  @include breakpoint (pc) {
+    font-size: 36px;
+  }
+
+}

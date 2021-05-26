@@ -1,0 +1,20 @@
+.c-global-nav__item {
+ 
+  text-align: left;
+  // padding: 0 24px;
+  list-style: none;
+ 
+  a {
+    // font-size: 20px;
+    // font-family: 'M+ Type-1 (general-j) regular';
+    // display: block;
+    // // padding: 8px 0;
+    // padding-top: 23px;
+    // // border-bottom: 1px solid #eee;
+    // text-decoration: none;
+    // color: $text-color;
+  }
+  @include breakpoint (pc) {
+ 
+  }
+}

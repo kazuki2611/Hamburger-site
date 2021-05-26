@@ -1,0 +1,85 @@
+.p-service {
+  @include breakpoint(tablet) {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  @include breakpoint (pc) {
+    width: 100%;
+    grid-column-start:2 ;
+    grid-column-end:3;
+    height: 1447px;
+    
+  }
+}
+  
+  
+.p-service__box {
+  position: relative;
+  background-image: url(../image/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+  background-size: cover;
+  // height: 700px;
+  height: 642px;
+  
+  margin: 20px ;
+  @include breakpoint (tablet) {
+    width: 100%;
+  height: 700px;
+   
+  margin-top: 40px;
+ margin-bottom:40px;
+ margin-right:41px;
+ margin-left: 40px;
+   
+    
+   }
+ @include breakpoint(pc) {
+  height: 1192px;
+ 
+ 
+ margin-top: 120px;
+ margin-bottom: 134px;
+ margin-right:5%;
+ margin-left: 5%;
+//  margin-right: 80px;
+//  margin-left: 111px;
+//  margin-left: auto;
+//  margin-right: auto;
+
+  position: relative;
+ }
+}
+.p-service__archive {
+  
+    
+  
+ p {
+  color: rgb(60, 42, 16);
+  height: 276px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "M+ Type-1 (general-j) regular";
+  padding: 30px 18px 0px 22px;
+  overflow: hidden;
+
+
+@include breakpoint (tablet) {
+  padding: 25px 35px 37px 42px;
+  height: 143px;
+}
+@include breakpoint (pc) {
+  padding: 25px 100px 70px 100px;
+}
+
+ }
+}
+
+.p-service__single {
+p {
+  padding: 30px 0 0 0;
+  @include breakpoint (tablet) {
+    padding: 60px 0 0 0;
+  }
+}
+}
+

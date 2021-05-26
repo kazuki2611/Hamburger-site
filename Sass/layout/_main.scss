@@ -1,0 +1,28 @@
+.l-main {
+  grid-column:1/2 ;
+  grid-row: 2/3;
+}
+.l-main-archive {
+  ul {
+  //  background-color: blue;
+  //  height: 582px;
+  // // background-position: center;
+  // padding: 0 19px 20px 21px;
+  // width: 100%;
+  // position: relative;
+  // margin-top: 20.9px;
+  
+   li {
+    a {
+      color: red;
+      text-decoration: none;
+    }
+   }
+  }
+  @include breakpoint (pc) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+   
+
+  }
+}

@@ -1,0 +1,84 @@
+.c-header__title {
+  font-family: "M+ Type-1 (general-j) bold";
+  font-weight: bold;
+  font-size: 36px;
+  padding: 119px 0 0 25px;
+  color: $title-color;
+  @include breakpoint(tablet) {
+    padding: 119px 0 0 86px;
+  }
+  @include breakpoint(pc) {
+    padding: 231px 0 0 86px;
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 16px;
+    top: 0;
+  }
+}
+.c-header__title2 {
+  font-family: "M+ Type-1 (general-j) bold";
+  font-weight: bold;
+  font-size: 36px;
+  padding: 102px 0 0 37px;
+  color: $title-color;
+
+  @include breakpoint(tablet) {
+    display: flex;
+    align-items: center;
+    padding: 102px 0 0 86px;
+  }
+  h1 {
+    font-size: 36px;
+    @include breakpoint(tablet) {
+      font-size: 60px;
+    }
+  }
+  p {
+    font-size: 16px;
+
+    @include breakpoint(tablet) {
+      padding-left: 20px;
+    }
+  }
+}
+.c-header__title__page {
+  @extend.c-header__title2;
+  h1 {
+    padding: 0;
+    margin: 0 auto;
+    @include breakpoint(tablet) {
+    }
+  }
+  @include breakpoint(tablet) {
+    padding: 0;
+  }
+}
+.c-header__title3 {
+  @extend.c-header__title2;
+  display: flex;
+  align-items: center;
+  color: $title-color;
+
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  padding: 0;
+  font-size: 36px;
+  @include breakpoint(tablet) {
+    font-size: 60px;
+    left: 10%;
+    top: 40%;
+  }
+  p {
+    @include breakpoint(tablet) {
+      font-size: 60px;
+    }
+    font-size: 36px;
+    padding-left: 20px;
+  }
+}

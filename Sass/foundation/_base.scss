@@ -1,0 +1,27 @@
+body {
+  &.is-open {
+    position: fixed;
+    @include breakpoint (pc) {
+      position: static;
+    }
+  }
+  // font-family: 'Roboto','M+ C Type-1 (basic latin) Regular','M+ Type-1 (general-j) Regular';
+
+//  position: fixed;
+  overflow-x: hidden;
+  
+ }
+ @font-face {
+  font-family: 'M+ 1m bold';
+  src: url('../fonts/mplus-1m-bold-sub.eot');
+  src: url('../fonts/mplus-1m-bold-sub.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/mplus-1m-bold-sub.woff') format('woff'),
+  url('../fonts/mplus-1m-bold-sub.ttf') format('truetype');
+}
+
+body {
+  font-family: 'M+ 1m bold';
+}
+#wpadminbar {
+  position: fixed;
+}

@@ -1,0 +1,95 @@
+.p-global-nav {
+  position: fixed;
+
+  right: -87%; /* これで隠れる */
+  top: 0;
+  width: 87%; /* スマホに収まるくらい */
+  height: 100%;
+  // padding-top: 40px;
+  background-color: #f2ede9;
+  transition: all 0.6s;
+  z-index: 200;
+  overflow-y: scroll; /* メニューが多くなったらスクロールできるように */
+  // height: 100vh;
+  li {
+    list-style: none;
+    font-size: 24px;
+    padding: 24px 0 0 40px;
+    text-align: left;
+    color: #707070;
+    ul {
+      li {
+        padding: 0;
+
+        a {
+          font-family: $font-regular;
+          font-size: 20px;
+          padding-top: 0;
+          padding: 24px 0 0 20px;
+          display: block;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      color: $text-color;
+      font-family: $font-bold;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    width: 367px;
+    right: -367px;
+  }
+  @include breakpoint(pc) {
+    //  grid-column-start:2 ;
+    //  grid-column-end:3 ;
+    padding-top: 216px;
+    width: 367px;
+    height: 100%;
+
+    position: static;
+  }
+
+  &.is-open {
+    transition: 0.6s;
+    right: 0;
+  }
+}
+.p-global-nav__list {
+  // font-size: 24px;
+  // padding:34px 0 0 46px ;
+  // text-align: left;
+  // color: $text-color;
+  // // margin-bottom: 40px;
+  // // margin: 0 0 40px 46px;
+  // font-family: 'M+ Type-1 (general-j) bold';
+  @include breakpoint(pc) {
+  }
+}
+.is-open .black-bg {
+  opacity: 0.8;
+  visibility: visible;
+  @include breakpoint(pc) {
+    display: none;
+  }
+}
+.p-global-nav-archive {
+  height: 100%;
+  @include breakpoint(pc) {
+    height: 2445px;
+  }
+}
+.p-global-nav-archive__search {
+  height: 100%;
+  @include breakpoint(pc) {
+    height: 3445px;
+  }
+}
+.p-global-nav__single {
+  @include breakpoint(pc) {
+    height: 6097px;
+  }
+}

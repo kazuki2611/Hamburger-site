@@ -1,0 +1,144 @@
+
+.p-hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px; /* クリックしやすいようにちゃんと幅を指定する */
+  height: 40px; /* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+  display: none;
+
+ 
+  &.is-open {
+    @include breakpoint (pc) {
+      display: none;
+    }
+    display: block;
+    transition: all .6s;
+  }
+  
+}
+// .p-hamburger.is-open {
+//   background-color: #2498b3;
+// }
+// .p-hamburger.is-open::after {
+//   transform: rotate(-45deg);
+//   top: 24px;
+//   background-color: #fff;
+// }
+// .p-hamburger.is-open::before {
+//   transform: rotate(45deg);
+//   top: 24px;
+//   background-color: #fff;
+// }
+.p-hamburger::after {
+  transform: rotate(-45deg);
+  content: '';
+  width: 22px;
+  height: 3px;
+  background-color: $text-color;
+  position: absolute;
+  left: calc(50% - (20px / 2 ));
+  display: block;
+  transition: transform 0.2s;
+  top: 24px;
+}
+.p-hamburger::before {
+  top: 24px;
+  transform: rotate(45deg);
+  content: '';
+  width: 22px;
+  height: 3px;
+  background-color: $text-color;
+  position: absolute;
+  left: calc(50% - (20px / 2 ));
+  display: block;
+  transition: transform 0.2s;
+  bottom: 15px;
+}
+// .p-hamburger span {
+//   width: 20px;
+//   height: 2px;
+//   font-size: 0;
+//   position: absolute;
+//   background: #707070;
+//   background-size: auto 1px;
+//   left: calc(50% - (20px / 2 ));
+//   top: 50%;
+//   transition: transform .2s;
+// }
+
+
+.p-hamburger_button {
+  font-family:  'Roboto';
+  color: $text-color;
+font-size: 20px;
+font-weight: bold;
+position: absolute;
+right: 16px;
+top:14px;
+@include breakpoint (tablet) {
+  font-size: 34px;
+  top: 18px;
+  right: 26px;
+}
+@include breakpoint(pc) {
+  right: 235px;
+  top: 82px;
+  font-size: 34px;
+}
+
+}
+// .hamburger_btn {
+//   top: 0;
+//   background-color: #F2EDE9;
+//   position: absolute;
+//   z-index: 1;
+//   right: 0;
+//   text-align: center;
+//   overflow: hidden;
+//   height: 2600px;
+//   // overflow: scroll;
+//   width: 0;
+ 
+//   &.is-open {
+//    width: 328px;
+   
+
+//   }
+// }
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: $background-color;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+// .p-hamburger_menu  {
+  
+//   list-style: none;
+//   color: #707070;
+//   text-align: left;
+//   // transition: all .3s;
+//  width: 328px;
+//   a {
+//     color: #707070;
+//     text-decoration: none;
+//     padding-bottom: 43px;
+   
+    
+//   }
+//   li {
+//     list-style: none;
+//     padding:23px 0 0 10px;
+    
+//   }
+// }

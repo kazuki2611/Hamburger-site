@@ -1,0 +1,40 @@
+.l-header {
+  height: 100%;
+  background-color: $base-color;
+  text-align: center;
+  width: 100%;
+ @include breakpoint (pc) {
+  display: flex;
+ justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 217px;
+
+  
+
+ }
+}
+.l-header__left h1  {
+  font-family: 'Roboto';
+    color:$text-color;
+    margin: 0px 46px 38px 86px;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    @include breakpoint (tablet) {
+      color:$text-color;
+    }
+    @include breakpoint (pc) {
+      color:$text-color;
+     margin: 0;
+     padding-top: 0;
+     padding-left :65px;
+     font-size: 64px;
+    }
+    
+  }
+
+  .l-header-archive {
+    grid-column:1/2 ;
+  
+  }

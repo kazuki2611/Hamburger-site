@@ -1,0 +1,16 @@
+.p-blockquote {
+  color: $font-color;
+  font-family: $font-regular;
+ padding: 30px 16px 0 20px;
+  height: 617px;
+  margin: 30px 0px 0 0px;
+  background-color: #F5F5F5;
+  @include breakpoint (tablet) {
+    height: 444px;
+    padding: 50px 56px 0 50px;
+    margin: 60px 0 0 0;
+  }
+  @include breakpoint (pc) {
+    padding: 50px 60px 0 50px;
+  }
+}

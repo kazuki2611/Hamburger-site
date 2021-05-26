@@ -1,0 +1,27 @@
+.u-border {
+  display: none;
+  @include breakpoint (tablet) {
+    display: block;
+  }
+  &__2 {
+   top: 102px;
+   left: 42.5px;
+  
+   width: 75px;
+   border: solid 1px;
+   @include breakpoint (pc) {
+     top: 189.5px;
+     left: 119.5px;
+   }
+   
+  }
+  &__3 {
+    @include breakpoint (tablet) {
+      top: 79.5px;
+      left: 3.3px;
+    }
+    @include breakpoint (pc) {
+    top: 140.5px;
+    }
+  }
+}
