@@ -11,6 +11,9 @@
   z-index: 200;
   overflow-y: scroll; /* メニューが多くなったらスクロールできるように */
   // height: 100vh;
+  h2 {
+    display: none;
+  }
   li {
     list-style: none;
     font-size: 24px;

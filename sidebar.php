@@ -11,6 +11,14 @@
     )
   );
   ?>
+  <div class="p-global-nav">
+    <?php
+        if ( is_active_sidebar( 'category_widget' ) ) :
+            dynamic_sidebar( 'category_widget' );
+        else:
+    ?>
+   
+    <?php endif; ?>
   <button class="p-hamburger  is-hamburger">
     <span></span>
   </button>

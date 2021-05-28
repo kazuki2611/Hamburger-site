@@ -335,10 +335,6 @@ body {
   font-family: 'M+ 1m bold';
 }
 
-#wpadminbar {
-  position: fixed;
-}
-
 .l-header {
   height: 100%;
   background-color: #FFFDFA;
@@ -520,6 +516,10 @@ body {
   z-index: 200;
   overflow-y: scroll;
   /* メニューが多くなったらスクロールできるように */
+}
+
+.p-global-nav h2 {
+  display: none;
 }
 
 .p-global-nav li {
@@ -1112,7 +1112,6 @@ body {
 
 .l-footer {
   grid-column: 1/3;
-  grid-row: 2/3;
   position: relative;
 }
 
@@ -2110,5 +2109,87 @@ pre {
   .u-text {
     height: 191px;
   }
+}
+
+.wp-caption {
+  font-size: 1.3rem;
+}
+
+.wp-caption-text {
+  margin-top: -20px;
+}
+
+.sticky {
+  padding: 20px;
+  background: #f3f3f3;
+}
+
+.gallery-caption {
+  font-size: 1.3rem;
+}
+
+.bypostauthor {
+  padding: 20px;
+  background: #f0f8ff;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1rem;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1rem;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+.p-sidebar {
+  background-color: red;
 }
 /*# sourceMappingURL=styles.css.map */

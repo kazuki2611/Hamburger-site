@@ -128,6 +128,7 @@
           </div>
            -->
   <div class="p-page">
+  <?php wp_link_pages( 'before=<p>&after=</p>&next_or_number=number&pagelink= %' ); ?>
     <?php global $wp_rewrite;
     $paginate_base = get_pagenum_link(1);
     if (strpos($paginate_base, '?') || !$wp_rewrite->using_permalinks()) {

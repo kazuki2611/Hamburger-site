@@ -3,7 +3,7 @@
 
       'menu_class' => 'p-container p-container__title  u-size20',
       'menu' => 'フッターナビゲーション',
-      
+      'theme_location' => '' 
       
     )); ?>
  

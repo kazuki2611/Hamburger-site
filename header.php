@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <title><?php the_title(); ?></title>
+ 
+  <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
   <?php wp_head(); ?>
 </head>
 

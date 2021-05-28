@@ -15,8 +15,10 @@ function hamburger_setup()
   add_theme_support('post-thumbnails');
   // タイトルタグを管理画面から導入できるようにする
   add_theme_support('title-tag');
+  add_theme_support( 'automatic-feed-links' );
+  add_theme_support( "custom-background");
   // カスタムメニュー有効化
-  add_theme_support('menus');
+  register_nav_menus();
 
   register_nav_menus([
     'p-container' => 'フッターナビゲーション',
@@ -47,18 +49,20 @@ function hamburger_script()
 
 add_action('wp_enqueue_scripts', 'hamburger_script');
 
-function widgetarea_init()
-{
-  register_sidebar(array(
-    'name' => 'サイドバー',
-    'id' => 'side-widget',
-    'before_widget' => '<div id="%1$s" class="%2$s sidebar-wrapper">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4 class="sidebar-title">',
-    'after_title' => '</h4>'
-  ));
+function wpbeg_widgets_init() {
+    register_sidebar (
+        array(
+            'name'          => 'カテゴリーウィジェット',
+            'id'            => 'category_widget',
+            'description'   => 'カテゴリー用ウィジェットです',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            // 'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
+            'after_title'   => "</h2>\n",
+        )
+    );
 }
-add_action('widgets_init', 'widgetarea_init');
+add_action( 'widgets_init', 'wpbeg_widgets_init' );
 
 //タイトル出力
 function wpbeg_title($title)
@@ -74,3 +78,9 @@ add_filter('pre_get_document_title', 'wpbeg_title');
 
 register_nav_menus(array('global_nav' => esc_html__('p-global-nav', 'Hamburger'), 'sub_nav' => esc_html__('p-global-nav__list', 'Hamburger'),));
 add_theme_support('post-thumbnails');
+if ( ! isset( $content_width ) ) $content_width = 1920;
+function wpdocs_theme_add_editor_styles() {
+  add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+add_theme_support( 'title-tag' );
