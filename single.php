@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : ?>
   <?php while (have_posts()) : the_post(); ?>
+  <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <main class="l-main__single">
       <div class=" p-hero__single">
 

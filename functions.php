@@ -49,20 +49,7 @@ function hamburger_script()
 
 add_action('wp_enqueue_scripts', 'hamburger_script');
 
-function wpbeg_widgets_init() {
-    register_sidebar (
-        array(
-            'name'          => 'カテゴリーウィジェット',
-            'id'            => 'category_widget',
-            'description'   => 'カテゴリー用ウィジェットです',
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            // 'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-            'after_title'   => "</h2>\n",
-        )
-    );
-}
-add_action( 'widgets_init', 'wpbeg_widgets_init' );
+
 
 //タイトル出力
 function wpbeg_title($title)
@@ -84,3 +71,4 @@ function wpdocs_theme_add_editor_styles() {
 }
 add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 add_theme_support( 'title-tag' );
+add_theme_support( "custom-header", $args );
