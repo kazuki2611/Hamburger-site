@@ -43,8 +43,7 @@ height: 530px;
 }
 .p-hero__single {
 
-background-position: center;
-background-size: cover;
+
 height: 225px;
 position: relative;
 @include breakpoint (tablet) {
@@ -52,11 +51,11 @@ position: relative;
   height: 500px;
 }
 img {
+  object-fit: cover;
   height: 500px;
   width: 100%;
   
-  background-position: center;
-  background-size: cover;
+ 
 }
 
 }

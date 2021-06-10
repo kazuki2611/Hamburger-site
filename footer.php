@@ -6,6 +6,7 @@
       'theme_location' => '' 
       
     )); ?>
+    <p>Copyright: RaiseTech</p>
  
 </footer>
 

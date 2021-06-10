@@ -22,9 +22,9 @@
           <h2 class="c-service__archive__title c-service__single__title">
             見出しh２
           </h2>
-          <!-- <p>
-          Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
-        </p> -->
+          <p>
+          
+        </p>
           <?php the_content(); ?>
         <?php endwhile; ?>
       <?php endif; ?>

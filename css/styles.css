@@ -383,6 +383,7 @@ body {
 
 .p-searchform input[type=text] {
   height: 46px;
+  width: 60%;
   border: 1px solid #707070;
   line-height: 26px;
   padding: 0 11px;
@@ -421,6 +422,7 @@ body {
   border-color: #707070;
   color: #707070;
   padding: 0 10px;
+  width: 20%;
   margin-left: 12px;
   cursor: pointer;
   border-radius: 10px;
@@ -480,8 +482,6 @@ body {
 }
 
 .p-hero__single {
-  background-position: center;
-  background-size: cover;
   height: 225px;
   position: relative;
 }
@@ -493,10 +493,9 @@ body {
 }
 
 .p-hero__single img {
+  object-fit: cover;
   height: 500px;
   width: 100%;
-  background-position: center;
-  background-size: cover;
 }
 
 .p-hero__page {
@@ -1025,8 +1024,6 @@ body {
 .p-container {
   font-family: 'M+ Type-1 (general-j) regular';
   font-size: 20px;
-  background-color: #9D8670;
-  height: 150px;
   width: 100%;
   color: #fff;
   display: flex;
@@ -1051,7 +1048,6 @@ body {
 @media (min-width: 1200px) {
   .p-container {
     width: 100%;
-    height: 150px;
   }
 }
 
@@ -1112,13 +1108,15 @@ body {
 
 .l-footer {
   grid-column: 1/3;
+  background-color: #9D8670;
+  height: 150px;
   position: relative;
 }
 
 .l-footer p {
+  color: #fff;
   text-align: center;
-  height: 100px;
-  width: 100px;
+  margin: 34px 0 30px 0;
 }
 
 .c-title {
@@ -1211,12 +1209,12 @@ body {
 }
 
 .u-padding {
-  padding: 216px 0 0 46px;
+  padding: 216px 0 900px 46px;
 }
 
 @media (min-width: 768px) {
   .u-padding {
-    padding: 212px 0 0 0px;
+    padding: 212px 0 900px 0px;
   }
 }
 
@@ -1312,8 +1310,8 @@ body {
   align-items: center;
   color: #fff;
   position: absolute;
-  top: 50%;
-  left: 20%;
+  top: 60%;
+  left: 10%;
   padding: 0;
   font-size: 36px;
 }
@@ -1394,12 +1392,6 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .p-menu__box__wrapper p {
-    height: 73px;
-  }
-}
-
 @media (min-width: 1200px) {
   .p-menu__box__wrapper p {
     font-size: 16px;
@@ -1408,15 +1400,13 @@ body {
 }
 
 .p-menu__box__picture {
-  background-size: cover;
-  background-position: center;
+  height: 230px;
 }
 
 .p-menu__box__picture img {
+  object-fit: cover;
   height: 230px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
 }
 
 @media (min-width: 768px) {
