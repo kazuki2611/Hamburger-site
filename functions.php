@@ -22,6 +22,8 @@ function hamburger_setup()
 
   register_nav_menus([
     'p-container' => 'フッターナビゲーション',
+    'p-global-nav' => 'グローバルナビゲーション'
+    
   ]);
 
 }
@@ -63,7 +65,7 @@ function wpbeg_title($title)
 }
 add_filter('pre_get_document_title', 'wpbeg_title');
 
-register_nav_menus(array('global_nav' => esc_html__('p-global-nav', 'Hamburger'), 'sub_nav' => esc_html__('p-global-nav__list', 'Hamburger'),));
+
 add_theme_support('post-thumbnails');
 if ( ! isset( $content_width ) ) $content_width = 1920;
 function wpdocs_theme_add_editor_styles() {
